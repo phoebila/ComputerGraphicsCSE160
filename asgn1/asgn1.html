@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asgn1</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    
+    </canvas>
+
+    <br>
+    <button type="button" id="clear">Clear Canvas</button>
+    <button type="button" id="eraser">Eraser</button>
+    <br>
+
+    <p>
+    </p>
+    Drawing Mode:
+    <br>
+    <button type="button" id="squares">Squares</button>
+    <button type="button" id="triangles">Triangles</button>
+    <button type="button" id="circles">Circles</button>
+
+    <p>
+    </p>
+    Shape Color:
+    <br>
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+    Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+
+    <p></p>
+    Shape Size: <input type="range" min="5" max="40" value="5" class="slider" id="sizeSlide">
+    (Circles) Segment Count: <input type="range" min="3" max="100" value="5" class="slider" id="segmentsSlide">
+
+    <p>Note: My awesomeness for this assignment is an eraser tool to help clear shapes without having to erase the whole board!</p>
+    <button type="button" id="phoebeDraw" onclick="phoebeDrawing()">Draw Picture</button>
+
+    <p>
+    <img src="image.png">
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="Eraser.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="phoebeDraw.js"></script>
+    <script src="Circle.js"></script>
+    <script src="asgn1.js"></script>
+  </body>
+</html>
