@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Asgn3</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="800">
+    
+    </canvas>
+
+    <p>
+    FPS: <label id="fps">
+    </p>
+    
+    Animation Toggle: 
+    <button type="button" id="on">ON</button>
+    <button type="button" id="off">OFF</button>
+    <button type="button" id="kittyQuiet">Be Quiet Kitty!</button>
+    <br>
+    <p></p>
+
+    Body Rotation:
+    <br>
+    Head <input type="range" min="0" max="15" value="0" class="slider" id="headSlide">
+    Animation: <button type="button" id="headOn">ON</button>
+              <button type="button" id="headOff">OFF</button>
+    <br>
+    Tail <input type="range" min="-25" max="25" value="0" class="slider" id="tailSlide">
+    Animation: <button type="button" id="topOn">ON</button>
+              <button type="button" id="topOff">OFF</button>
+
+    <p></p>
+    <p style="color:rgb(235, 163, 97);">Shift + click to poke the kitty!</p>
+    <p style="color:rgb(235, 163, 97);">Click and drag to move the camera around.</p>
+    <p style="color:rgb(235, 163, 97);">Use normal WASD to move around.</p>
+    <p style="color:rgb(235, 163, 97);">Use Q to pan left and E to pan right.</p>
+    <p style="color:rgb(235, 163, 97);">Process:</p>
+
+    <p>
+    <img src="image.png">
+    <img src="image1.png">
+    <img src="image2.png">
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix-cse160.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="asgn3.js"></script>
+  </body>
+</html>
